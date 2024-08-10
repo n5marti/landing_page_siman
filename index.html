@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
     <title>Promociones Siman</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+ 
 </head>
 
 <body>
@@ -14,33 +16,52 @@
             <h1>Promociomes Siman</h1>
             <nav>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Promociones</li>
-                    <li>Contacto</li>
+                    <li><a href="home">Inicio</a></li>
+                    <li><a href="promotions">Promociones</a></li>
+                    <li><a href="contact">Contacto</a></li>
                 </ul>
             </nav>
         </Div>
     </Header>
 
-    <section id="Home">
-        <div>
-            <h2>Aprovecha nuestras grandes ofertas y descuentos!</h2>
-            <p>Descubre nuestras promociones exclusivas y ahorra en tus compras</p>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>¡Grandes Ofertas y Descuentos!</h2>
         </div>
     </section>
-    
 
-    <section id="Promotions">
-        <div>
+    <section id="promotions">
+        <div class="container">
             <h2>Promociones</h2>
+            <div class="promo">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/945c91c8-5c81-411d-851b-faea7d3e8345___c3e76a3972b5a607997a52dce6e694be.jpg" alt="Promoción 1">
+                <div class="promo-details">
+                    <h3>Descuento del 50%</h3>
+                    <p>En productos seleccionados. Válido hasta el 31 de agosto.</p>
+                </div>
+            </div>
+            <div class="promo">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/a7cdf4ff-36e3-4b43-ab40-706787be9a55___0d6e7e859e2ff1d1ecc1de3b9742b185.jpg" alt="Promoción 2">
+                <div class="promo-details">
+                    <h3>2x1 en Ropa</h3>
+                    <p>Compra una prenda y lleva otra gratis. Aplican restricciones.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="Contact">
-        <div>
+
+    <section id="contact">
+        <div class="container">
             <h2>Contacto</h2>
+            <p>Suscríbete para recibir actualizaciones sobre nuestras promociones.</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Tu correo electrónico">
+                <button type="submit">Suscribirse</button>
+            </form>
         </div>
     </section>
+
 </body>
 
 <footer>

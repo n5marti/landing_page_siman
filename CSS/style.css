@@ -36,9 +36,104 @@ nav ul li {
 }
 
 
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background: url(https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/55637b3c-7a55-49b2-ac04-8eb4f5ee244b___1e9f7b754fe098cf23b92ee39048a323.jpg) no-repeat center center/cover;
+    height: 50vh;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 75vh;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+
+
+
+#promotions .promo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+#promotions .promo img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 1rem;
+}
+
+#promotions .promo-details {
+    flex: 1;
+}
+
+#promotions h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input[type="email"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 400px;
+}
+
+#contact button {
+    padding: 0.5rem 2rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        height: 30vh;
+    }
+
+    #promotions .promo {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #promotions .promo img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
 }
